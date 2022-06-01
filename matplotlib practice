@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+coords = np.random.rand(20,2)
+coords_df = pd.DataFrame(coords, columns = ['x','y'])
+
+plt.scatter(coords_df['x'], coords_df['y'])
+plt.title('yes sir')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
+
+
+
+
+

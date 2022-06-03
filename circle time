@@ -1,0 +1,35 @@
+import pandas as pd
+import os.path
+#import operator
+
+csv_filepath = input("Please enter file path: ")
+
+while not os.path.isfile(csv_filepath):        
+    print("Error: That is not a valid file, try again...")
+    csv_filepath = input("Please enter a valid file path: ")
+
+
+df = pd.read_csv(csv_filepath)
+print(df)
+
+
+
+#if (csv_filepath.contain("")):
+    #csv_filepath.strip("")
+#if( ("") in csv_filepath):
+    #csv_filepath.strip("")
+
+#if ('""') in csv_filepath:
+        #csv_filepath.strip('""')
+    
+    #else:
+        #print("Error: That is not a valid file, try again...")
+
+#else:
+    #csv_filepath = input('Please enter file path: ')
+    #df = pd.read_csv(csv_filepath)
+
+
+#df2 = df['Label'].value_counts()
+#print(df2)
+

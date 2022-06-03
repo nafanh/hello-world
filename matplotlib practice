@@ -4,6 +4,7 @@ import pandas as pd
 
 coords = np.random.rand(20,2)
 coords_df = pd.DataFrame(coords, columns = ['x','y'])
+#print(coords_df)
 
 plt.scatter(coords_df['x'], coords_df['y'])
 plt.title('yes sir')
